@@ -7,36 +7,56 @@ body, html {
     font-family: Arial, sans-serif;
 }
 
-.full-page-image {
-    background: url('../img/cantaca de macao.jpg') no-repeat center center fixed;
-    background-size: cover;
+.content {
+    display: flex;
+    flex-direction: column;
     height: 100%;
-    width: 100%;
+}
+
+.full-page-image {
+    background: url('../img/cantaca de macao.jpg') no-repeat center center;
+    background-size: cover;
+    flex-grow: 1;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .hidden-link {
     position: absolute;
-    bottom: 92px; /* Ajusta este valor para mover el área clicable más arriba */
-    left: 51%;
+    bottom: 7px; /* Ajusta este valor para mover el área clicable más arriba */
+    left: 50%;
     transform: translateX(-50%);
     width: 250px; /* Ajusta este valor para definir el ancho del área clicable */
     height: 60px; /* Ajusta este valor para definir la altura del área clicable */
     background-color: rgba(0, 0, 0, 0); /* Color de fondo transparente */
     cursor: pointer;
+    transition: transform 0.3s ease;
 }
 
-/*.hidden-link:hover {
-    background-color: rgba(242, 251, 252, 0.122); /* Muestra un color al pasar el ratón por encima 
-}*/
+.hidden-link:hover {
+    transform: translateX(-50%) translateY(-10px); /* Elevar el área clicable */
+}
 
-footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    background-color: #f4f4f4;
-    padding: 10px 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 10px;
+
+
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .hidden-link {
+        width: 200px;
+        height: 50px;
+    }
+
+   
+}
+
+@media (max-width: 480px) {
+    .hidden-link {
+        width: 150px;
+        height: 40px;
+    }
+
+    
 }
