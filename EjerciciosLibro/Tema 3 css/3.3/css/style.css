@@ -1,0 +1,25 @@
+
+h2{}
+
+h2:first-of-type{}
+
+h2:last-of-type{}
+
+
+#principal{}
+
+#principal h2{
+
+}
+
+.Articulo{
+
+}
+
+.Artitculo h2{
+
+}
+
+#secundario article:last-child{
+
+}

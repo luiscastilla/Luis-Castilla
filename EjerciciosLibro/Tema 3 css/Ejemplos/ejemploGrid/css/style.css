@@ -1,0 +1,6 @@
+#divGrid{
+    display:grid;
+    /*grid-template-columns: auto auto auto;*/
+    grid-template-columns: 100px 100px 100px;
+}
+

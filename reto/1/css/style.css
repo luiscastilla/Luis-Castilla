@@ -1,0 +1,21 @@
+body{
+    margin=0;
+    background-color: rgba(0, 157, 255, 0.662);
+    display: block;
+}
+
+.circulo-top{
+    width: 50%;
+    float: left;
+}
+.circulo-bottom{
+    width: 50%;
+    float: right;
+
+}
+
+#foto, #tarjeta{
+    position:fixed;
+
+
+}
