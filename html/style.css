@@ -67,6 +67,7 @@ body, html {
     .message {
         font-size: 1.2em;
         padding: 15px;
+        width: 90%; /* Ajusta el ancho del texto para pantallas pequeñas */
     }
 }
 
@@ -78,8 +79,10 @@ body, html {
     .message {
         font-size: 1em;
         padding: 10px;
+        width: 90%; /* Ajusta el ancho del texto para pantallas pequeñas */
     }
 }
+
 
 
 
