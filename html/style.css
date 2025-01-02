@@ -40,11 +40,7 @@ body, html {
     height: auto; /* Ajusta la altura automáticamente */
 }
 
-.map-container iframe {
-    width: 100%;
-    height: auto;
-    border: 0;
-}
+
 
 .message {
     font-size: 1.5em;
@@ -59,14 +55,12 @@ body, html {
         flex-direction: column;
     }
 
-    .image-container,
-    .map-container {
+    .image-container
+     {
         width: 100%; /* Ocupan todo el ancho en pantallas pequeñas */
     }
 
-    .map-container iframe {
-        height: 300px;
-    }
+
 
     .message {
         font-size: 1.2em;
