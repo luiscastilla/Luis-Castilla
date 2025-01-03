@@ -31,12 +31,14 @@ body, html {
     align-items: center;
     width: 100%;
     max-width: 800px;
+    height: auto;
     margin-bottom: 10px; /* Ajusta este valor para acercar la imagen al texto */
 }
 
 .image-container img {
-    max-width: 100%;
+    width: 100%;
     height: auto;
+    object-fit: cover; /* Asegura que la imagen cubra el contenedor sin distorsionarse */
 }
 
 .message {
@@ -44,6 +46,8 @@ body, html {
     margin: 10px 0; /* Ajusta este valor para acercar el texto a la imagen */
     line-height: 1.5;
     padding: 0 10px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .pdf {
@@ -70,6 +74,15 @@ audio {
 
 /* Estilos responsivos para pantallas más pequeñas */
 @media (max-width: 768px) {
+    .image-container {
+        max-width: 100%;
+    }
+
+    .message {
+        max-width: 100%;
+        font-size: 14px;
+    }
+
     .pdf {
         padding: 8px 16px;
         font-size: 14px;
@@ -82,6 +95,15 @@ audio {
 }
 
 @media (max-width: 480px) {
+    .image-container {
+        max-width: 100%;
+    }
+
+    .message {
+        max-width: 100%;
+        font-size: 12px;
+    }
+
     .pdf {
         padding: 6px 12px;
         font-size: 12px;
@@ -92,4 +114,5 @@ audio {
         max-width: 300px;
     }
 }
+
 
