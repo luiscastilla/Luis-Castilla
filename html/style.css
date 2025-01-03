@@ -15,25 +15,35 @@ body, html {
     justify-content: center;
     height: 100%;
     width: 100%;
+    padding: 10px;
 }
 
 .content {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
 }
 
 .image-container {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    max-width: 800px;
     margin-bottom: 10px; /* Ajusta este valor para acercar la imagen al texto */
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
 }
 
 .message {
     text-align: center;
     margin: 10px 0; /* Ajusta este valor para acercar el texto a la imagen */
     line-height: 1.5;
+    padding: 0 10px;
 }
 
 .pdf {
@@ -50,11 +60,36 @@ body, html {
     display: none; /* Oculta este div si no es necesario */
 }
 
-/* Ocultar el reproductor de audio */
+/* Mantener el reproductor de audio visible */
 audio {
-    display: none;
+    display: block;
+    margin-top: 20px; /* Ajusta este valor según sea necesario */
+    width: 100%;
+    max-width: 600px;
 }
-/* Mantener el reproductor de audio visible */ 
-audio { 
-    display: block; margin-top: 20px; /* Ajusta este valor según sea necesario */ 
+
+/* Estilos responsivos para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .pdf {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+
+    audio {
+        width: 100%;
+        max-width: 400px;
+    }
 }
+
+@media (max-width: 480px) {
+    .pdf {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    audio {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
